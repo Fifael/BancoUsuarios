@@ -1,11 +1,8 @@
-using System;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using System.Collections.Generic;
 using Models;
 using Repository;
 
 namespace Controller {
-    public class PerfilControlle{
+    public class PerfilController{
         public static Perfil GetPerfil(int id) {
             using (Context db = new Context()) {
                 return db.Perfis.Find(id);

@@ -7,6 +7,6 @@ namespace Repository {
         public DbSet<Models.Usuario> Usuarios { get; set; }
         public DbSet<Models.Perfil> Perfis { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseMySql("Server=localhost;User Id=root;Database=0");
+            => options.UseMySql("Server=localhost;User Id=root;Database=Matue");
     }
 }
