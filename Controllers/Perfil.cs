@@ -1,8 +1,12 @@
 /*using Models;
 using Repository;
+using System.Linq;
+using System;
+using System.Collections.Generic;
+using System.Collections;
 
 namespace Controller {
-    public class PerfilController{
+    public class PerfilCollection : IEnumerable<Perfil>{
         public static Perfil GetPerfil(int id) {
             using (Context db = new Context()) {
                 return db.Perfis.Find(id);
@@ -34,6 +38,16 @@ namespace Controller {
                 db.Perfis.Remove(db.Perfis.Find(id));
                 db.SaveChanges();
             }
+        }
+
+        public IEnumerator<Perfil> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }*/

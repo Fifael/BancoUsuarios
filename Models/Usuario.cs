@@ -1,3 +1,4 @@
+using System;
 namespace Models
 {
     public class Usuario
@@ -14,7 +15,10 @@ namespace Models
             this.Email = email;
             this.Senha = senha;
         }
-        
+
+        public override string ToString() {
+            return "Id: " + this.Id + " Nome: " + this.Nome + " Email: " + this.Email + " Senha: " + this.Senha;
+        }
 
     }
 }

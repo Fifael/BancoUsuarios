@@ -3,9 +3,11 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Collections.Generic;
 using Models;
 using Repository;
+using System.Collections;
+using System.Linq;
 
 namespace Controller {
-    public class SessaoController{
+    public class SessaoCollection : IEnumerable<Sessao>{
 
         public static Sessao GetSessao(int id) {
             using (Context db = new Context()) {
@@ -40,5 +42,14 @@ namespace Controller {
             }
         }
 
+        public IEnumerator<Sessao> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }*/

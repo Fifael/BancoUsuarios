@@ -1,3 +1,5 @@
+/*using System;
+
 namespace Models {
     public class Sessao {
         public int Id { get; set; }
@@ -19,4 +21,4 @@ namespace Models {
             return "Id: " + this.Id + " UsuarioId: " + this.UsuarioId + " Token: " + this.token + " Data de Criação: " + this.dataCriacao + " Data de Expiração: " + this.dataExpiracao;
         }
     }
-}
+}*/

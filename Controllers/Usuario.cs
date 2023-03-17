@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using Models;
 using Repository;
 using System.Linq;
+using System.Collections;
 
 namespace Controller
 {
-    public class UsuarioController{
+    public class UsuarioCollection : IEnumerable<Usuario>{
         public static Usuario GetUsuario(int id)
         {
             using (Context db = new Context())
@@ -49,6 +50,16 @@ namespace Controller
                 db.Usuarios.Remove(db.Usuarios.Find(id));
                 db.SaveChanges();
             }
+        }
+
+        public IEnumerator<Usuario> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }

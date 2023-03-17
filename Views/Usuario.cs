@@ -20,7 +20,7 @@ namespace view
             Console.WriteLine("Digite a senha do usuário: ");
             string senha = Console.ReadLine();
             Usuario usuario = new Usuario(id, nome, email, senha);
-            UsuarioController.AddUsuario(usuario);
+            UsuarioCollection.AddUsuario(usuario);
 
         }
 
@@ -35,12 +35,12 @@ namespace view
             Console.WriteLine("Digite a senha do usuário: ");
             string senha = Console.ReadLine();
             Usuario usuario = new Usuario(id, nome, email, senha);
-            UsuarioController.UpdateUsuario(new Models.Usuario(id, nome, email, senha));
+            UsuarioCollection.UpdateUsuario(new Models.Usuario(id, nome, email, senha));
         }
 
         public static void Select()
         {
-            var usuarios = UsuarioController.GetUsuarios();
+            var usuarios = UsuarioCollection.GetUsuarios();
             foreach (Usuario usuario in usuarios)
             {
                 Console.WriteLine($"Id: {usuario.Id} Nome: {usuario.Nome} Email: {usuario.Email} Senha: {usuario.Senha}");
@@ -51,7 +51,7 @@ namespace view
         {
             Console.WriteLine("Informe o Id do usuário:");
             int id = int.Parse(Console.ReadLine());
-            Usuario usuario = UsuarioController.GetUsuario(id);
+            Usuario usuario = UsuarioCollection.GetUsuario(id);
             Console.WriteLine($"Id: {usuario.Id} Nome: {usuario.Nome} Email: {usuario.Email} Senha: {usuario.Senha}");
         }
 
@@ -59,7 +59,7 @@ namespace view
         {
             Console.WriteLine("Informe o Id do usuário:");
             int id = int.Parse(Console.ReadLine());
-            UsuarioController.DeleteUsuario(id);
+            UsuarioCollection.DeleteUsuario(id);
         }
     }
 }

@@ -1,37 +1,49 @@
-/*using Models;
+using Models;
 using Controller;
+using System;
 
-namespace view{
+/*namespace view{
     public class PerfilView{
         public static void CadastrarPerfil(){
             Console.WriteLine("Informe o Id do perfil:");
             int id = int.Parse(Console.ReadLine());
             Console.WriteLine("Informe o Id do usuário:");
             int usuarioId = int.Parse(Console.ReadLine());
-            Console.WriteLine("Informe o perfil:");
-            string perfils = Console.ReadLine();
-            Perfil perfil = new Perfil(id, usuarioId, perfils);
-            PerfilController.AddPerfil(perfil);
+            Console.WriteLine("Informe o status:");
+            string status = Console.ReadLine();
+            Perfil perfil = new Perfil(id, usuarioId, status);
+            PerfilCollection.AddPerfil(perfil);
         }
-        public static void AlterarPerfil(){
+
+        public static void ListarPerfil(){
+            var perfils = PerfilCollection.GetPerfis();
+            foreach (Perfil perfil in perfils){
+                Console.WriteLine($"Id: {perfil.Id} Id do usuário: {perfil.UsuarioId} Perfil: {perfil.Status}");
+            }
+        }
+
+        public static void BuscarPerfil(){
+            Console.WriteLine("Informe o Id do perfil:");
+            int id = int.Parse(Console.ReadLine());
+            Perfil perfil = PerfilCollection.GetPerfil(id);
+            Console.WriteLine($"Id: {perfil.Id} Id do usuário: {perfil.UsuarioId} Perfil: {perfil.Status}");
+        }
+
+        public static void AtualizarPerfil(){
             Console.WriteLine("Informe o Id do perfil:");
             int id = int.Parse(Console.ReadLine());
             Console.WriteLine("Informe o Id do usuário:");
             int usuarioId = int.Parse(Console.ReadLine());
-            Console.WriteLine("Informe o perfil:");
-            string perfil = Console.ReadLine();
-            PerfilController.UpdatePerfil(new Perfil(id, usuarioId, perfil));
+            Console.WriteLine("Informe o status:");
+            string status = Console.ReadLine();
+            Perfil perfil = new Perfil(id, usuarioId, status);
+            PerfilCollection.UpdatePerfil(perfil);
         }
-        public static void Select(){
-            var perfis = PerfilController.GetPerfis();
-            foreach (var perfil in perfis){
-                Console.WriteLine($"Id: {perfil.Id} - Id do usuário: {perfil.UsuarioId} - Perfil: {perfil.perfil}");
-            }
-        }
-        public static void RemoverPerfil(){
+
+        public static void DeletarPerfil(){
             Console.WriteLine("Informe o Id do perfil:");
             int id = int.Parse(Console.ReadLine());
-            PerfilController.DeletePerfil(id);
+            PerfilCollection.DeletePerfil(id);
         }
     }
 }*/

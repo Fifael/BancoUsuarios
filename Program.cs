@@ -21,8 +21,11 @@ namespace Program
                 Console.WriteLine("9 - Cadastra Sessao");
                 Console.WriteLine("10 - Alterar Sessao");
                 Console.WriteLine("11 - Mostar Sessao");
-                Console.WriteLine("12 - Remover Sessaol");
-                Console.WriteLine("13 - Sair");
+                Console.WriteLine("12 - Remover Sessao");
+                Console.WriteLine("13 - Mostar todos Usuario");
+                Console.WriteLine("14 - Mostar todos Perfil");
+                Console.WriteLine("15 - Mostar todos Sessao");
+                Console.WriteLine("16 - Sair");
 
                 opcao = int.Parse(Console.ReadLine());
                 switch (opcao)
@@ -34,36 +37,45 @@ namespace Program
                         UsuarioView.AlterarUsuario();
                         break;
                     case 3:
-                        UsuarioView.Select();
+                        UsuarioView.SelectById();
                         break;
                     case 4:
                         UsuarioView.RemoverUsuario();
                         break;
-                    /* case 5:
+                    /*case 5:
                         PerfilView.CadastrarPerfil();
                         break;
                     case 6:
-                        PerfilView.AlterarPerfil();
+                        PerfilView.AtualizarPerfil();
                         break;
                     case 7:
-                        PerfilView.Select();
+                        PerfilView.BuscarPerfil();
                         break;
                     case 8:
-                        PerfilView.RemoverPerfil();
+                        PerfilView.DeletarPerfil();
                         break;
                     case 9:
-                        UsuarioView.CadastrarUsuario();
+                        SessaoView.CadastrarSessao();
                         break;
                     case 10:
-                        UsuarioView.AlterarUsuario();
+                        SessaoView.AtualizarSessao();
                         break;
                     case 11:
-                        UsuarioView.Select();
+                        SessaoView.BuscarSessao();
                         break;
                     case 12:
-                        UsuarioView.RemoverUsuario();
+                        SessaoView.DeletarSessao();
+                        break;
+                    */case 13:
+                        UsuarioView.Select();
+                        break;
+                    /*case 14:
+                        PerfilView.ListarPerfil();
+                        break;
+                    case 15:
+                        SessaoView.ListarSessao();
                         break;*/
-                    case 13:
+                    case 16:
                         Sair();
                     break;
                     default:
