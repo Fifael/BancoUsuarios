@@ -21,7 +21,7 @@ namespace Program
                 Console.WriteLine("9 - Cadastra Sessao");
                 Console.WriteLine("10 - Alterar Sessao");
                 Console.WriteLine("11 - Mostar Sessao");
-                Console.WriteLine("12 - Remover Sessao");
+                Console.WriteLine("12 - Remover Sessaol");
                 Console.WriteLine("13 - Sair");
 
                 opcao = int.Parse(Console.ReadLine());
@@ -39,7 +39,7 @@ namespace Program
                     case 4:
                         UsuarioView.RemoverUsuario();
                         break;
-                    case 5:
+                    /* case 5:
                         PerfilView.CadastrarPerfil();
                         break;
                     case 6:
@@ -62,7 +62,7 @@ namespace Program
                         break;
                     case 12:
                         UsuarioView.RemoverUsuario();
-                        break;
+                        break;*/
                     case 13:
                         Sair();
                     break;

@@ -13,5 +13,10 @@ namespace Models {
             this.dataCriacao = dataCriacao;
             this.dataExpiracao = dataExpiracao;
         }
+
+        public override string ToString()
+        {
+            return "Id: " + this.Id + " UsuarioId: " + this.UsuarioId + " Token: " + this.token + " Data de Criação: " + this.dataCriacao + " Data de Expiração: " + this.dataExpiracao;
+        }
     }
 }

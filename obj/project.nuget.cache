@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yojp2nEGGHpwYG6NSg4nnk2IyCm/fbU30tr/LJP/dYwOKue9gzwUHtrDHuxSJ3h2opmG5wpUlI/rNaMrow5dkA==",
+  "dgSpecHash": "0lb5+DmbwzSqo2yz76eyN7ueuJJhR9u3sFKN1lrQQRnPLk9ma3gH8p9LDUxYfPKOWpPcBLxRM954cC75YV/9fA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rafael\\Desktop\\Programas de C#\\BancoUsuarios\\BancoUsuarios.csproj",
   "expectedPackageFiles": [
@@ -104,7 +104,11 @@
     "C:\\Users\\Rafael\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Rafael\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Rafael\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }

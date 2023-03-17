@@ -1,4 +1,4 @@
-namespace Models {
+/*namespace Models {
     public class Perfil {
         public int Id { get; set; }
         public Usuario usuario { get; set; }
@@ -11,4 +11,4 @@ namespace Models {
             this.perfil = perfil;
         }
     }
-}
+}*/

@@ -3,6 +3,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Collections.Generic;
 using Models;
 using Repository;
+using System.Linq;
 
 namespace Controller
 {
@@ -19,7 +20,7 @@ namespace Controller
         {
             using (Context db = new Context())
             {
-                return db.Usuarios.ToList();
+                return (from usuario in db.Usuarios select usuario).ToList();
             }
         }
 
@@ -49,10 +50,5 @@ namespace Controller
                 db.SaveChanges();
             }
         }
-
-
-
-
-
     }
 }
