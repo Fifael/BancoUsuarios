@@ -8,7 +8,7 @@ namespace Program
         static void Main(string[] args)
         {
             int opcao = 0;
-            while (opcao != 13)
+            while (opcao != 16)
             {
                 Console.WriteLine("1 - Cadastra Usuario");
                 Console.WriteLine("2 - Alterar Usuario");
