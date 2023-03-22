@@ -42,7 +42,7 @@ namespace Program
                     case 4:
                         UsuarioView.RemoverUsuario();
                         break;
-                    /*case 5:
+                    case 5:
                         PerfilView.CadastrarPerfil();
                         break;
                     case 6:
@@ -54,7 +54,7 @@ namespace Program
                     case 8:
                         PerfilView.DeletarPerfil();
                         break;
-                    case 9:
+                    /* case 9:
                         SessaoView.CadastrarSessao();
                         break;
                     case 10:
@@ -65,14 +65,14 @@ namespace Program
                         break;
                     case 12:
                         SessaoView.DeletarSessao();
-                        break;
-                    */case 13:
+                        break;*/
+                    case 13:
                         UsuarioView.Select();
                         break;
-                    /*case 14:
+                    case 14:
                         PerfilView.ListarPerfil();
                         break;
-                    case 15:
+                    /*case 15:
                         SessaoView.ListarSessao();
                         break;*/
                     case 16:

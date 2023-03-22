@@ -2,17 +2,21 @@ using Models;
 using Controller;
 using System;
 
-/*namespace view{
+namespace view{
     public class PerfilView{
         public static void CadastrarPerfil(){
+            try {
             Console.WriteLine("Informe o Id do perfil:");
             int id = int.Parse(Console.ReadLine());
             Console.WriteLine("Informe o Id do usuário:");
             int usuarioId = int.Parse(Console.ReadLine());
             Console.WriteLine("Informe o status:");
             string status = Console.ReadLine();
-            Perfil perfil = new Perfil(id, usuarioId, status);
-            PerfilCollection.AddPerfil(perfil);
+            PerfilCollection.AddPerfil(new Models.Perfil(id, usuarioId, status));
+
+            } catch (Exception e) {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void ListarPerfil(){
@@ -46,4 +50,4 @@ using System;
             PerfilCollection.DeletePerfil(id);
         }
     }
-}*/
+}

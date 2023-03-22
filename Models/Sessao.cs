@@ -8,7 +8,7 @@ namespace Models {
         public string token { get; set; }
         public DateTime dataCriacao { get; set; }
         public DateTime dataExpiracao { get; set; }
-        public Sessao(int id, int usuarioId, string token, DateTime dataCricao, DateTime dataExpiracao) {
+        public Sessao(int id, int usuarioId, string token, DateTime dataCriacao, DateTime dataExpiracao) {
             this.Id = id;
             this.UsuarioId = usuarioId;
             this.token = token;

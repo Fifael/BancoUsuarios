@@ -1,4 +1,4 @@
-/*using System;
+using System;
 
 namespace Models {
     public class Perfil {
@@ -19,4 +19,4 @@ namespace Models {
             return "Id: " + this.Id + " UsuarioId: " + this.UsuarioId + " Perfil: " + this.Status;
         }
     }
-}*/
+}

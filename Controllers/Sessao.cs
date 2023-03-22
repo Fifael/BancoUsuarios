@@ -1,5 +1,4 @@
 /*using System;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Collections.Generic;
 using Models;
 using Repository;
@@ -14,6 +13,7 @@ namespace Controller {
                 return db.Sessoes.Find(id);
             }
         }
+        
 
         public static List<Sessao> GetSessoes() {
             using (Context db = new Context()) {

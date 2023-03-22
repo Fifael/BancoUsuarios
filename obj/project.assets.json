@@ -431,11 +431,11 @@
           }
         }
       },
-      "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
+      "Pomelo.EntityFrameworkCore.MySql/3.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "3.1.0",
-          "MySqlConnector": "0.61.0",
+          "MySqlConnector": "[0.61.0, 1.0.0)",
           "Pomelo.JsonObject": "2.2.1"
         },
         "compile": {
@@ -2236,16 +2236,16 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
-      "sha512": "DYMsaJe/lKoaPGjB0ACnP+h5FeaJC+07f83FewBulkqfkUvc7m97PECX0OUHSTT+qEF0EOmJ7HQR0dltSCDyPQ==",
+    "Pomelo.EntityFrameworkCore.MySql/3.1.2": {
+      "sha512": "U8huPahKBOZp1GuC3/ngH5WiXb5ANgVIadVRd87W/XWDPv3eD9mC9+Tnc2XXbFjds53jFZ9zZqjmsONeyJ//YA==",
       "type": "package",
-      "path": "pomelo.entityframeworkcore.mysql/3.1.1",
+      "path": "pomelo.entityframeworkcore.mysql/3.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
         "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll",
-        "pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.3.1.2.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
@@ -5583,7 +5583,7 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore >= 3.1.2",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.2",
-      "Pomelo.EntityFrameworkCore.MySql >= 3.1.1",
+      "Pomelo.EntityFrameworkCore.MySql >= 3.1.2",
       "Pomelo.EntityFrameworkCore.MySql.Design >= 1.1.2"
     ]
   },
@@ -5593,11 +5593,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Programas de C#\\BancoUsuarios\\BancoUsuarios.csproj",
+      "projectUniqueName": "c:\\Users\\Rafael\\Desktop\\Programas de C#\\BancoUsuarios\\BancoUsuarios.csproj",
       "projectName": "BancoUsuarios",
-      "projectPath": "C:\\Users\\Rafael\\Desktop\\Programas de C#\\BancoUsuarios\\BancoUsuarios.csproj",
+      "projectPath": "c:\\Users\\Rafael\\Desktop\\Programas de C#\\BancoUsuarios\\BancoUsuarios.csproj",
       "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafael\\Desktop\\Programas de C#\\BancoUsuarios\\obj\\",
+      "outputPath": "c:\\Users\\Rafael\\Desktop\\Programas de C#\\BancoUsuarios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5636,7 +5636,7 @@
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "[3.1.1, )"
+            "version": "[3.1.2, )"
           },
           "Pomelo.EntityFrameworkCore.MySql.Design": {
             "target": "Package",
