@@ -54,10 +54,10 @@ namespace Program
                     case 8:
                         PerfilView.DeletarPerfil();
                         break;
-                    /* case 9:
+                    case 9:
                         SessaoView.CadastrarSessao();
                         break;
-                    case 10:
+                    /*case 10:
                         SessaoView.AtualizarSessao();
                         break;
                     case 11:

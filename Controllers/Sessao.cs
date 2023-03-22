@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using System.Collections.Generic;
 using Models;
 using Repository;
@@ -8,39 +8,28 @@ using System.Linq;
 namespace Controller {
     public class SessaoCollection : IEnumerable<Sessao>{
 
-        public static Sessao GetSessao(int id) {
-            using (Context db = new Context()) {
-                return db.Sessoes.Find(id);
-            }
-        }
-        
-
-        public static List<Sessao> GetSessoes() {
-            using (Context db = new Context()) {
-                return db.Sessoes.ToList();
-            }
-        }
-
-        public static void AddSessao(Sessao sessao) {
-            using (Context db = new Context()) {
-                db.Sessoes.Add(sessao);
-                db.SaveChanges();
-            }
-        }
-
-        public static void UpdateSessao(Sessao sessao) {
-            using (Context db = new Context()) {
-                db.Sessoes.Update(sessao);
-                db.SaveChanges();
+        public static void login (int id, string email, string senha){
+            try {
+                using (Context db = new Context()) {
+                    if(UsuarioCollection.getUsuarioByEmailAndSenha(email, senha) == null) {
+                        throw new Exception("Usuario não encontrado");
+                    } else {
+                        Usuario usuario = UsuarioCollection.getUsuarioByEmailAndSenha(email, senha)[0];
+                        int idUsuario = usuario.Id;
+                        string token = Guid.NewGuid().ToString();
+                        DateTime dataCriacao = DateTime.Now;
+                        DateTime dataExpiracao = DateTime.Now.AddHours(1);
+                        Sessao sessao = new Sessao(id, idUsuario, token, dataCriacao, dataExpiracao);
+                        db.Sessoes.Add(sessao);
+                        db.SaveChanges();
+                    }
+                }
+            } catch (Exception e) {
+                Console.WriteLine(e.Message);
             }
         }
 
-        public static void DeleteSessao(int id) {
-            using (Context db = new Context()) {
-                db.Sessoes.Remove(db.Sessoes.Find(id));
-                db.SaveChanges();
-            }
-        }
+
 
         public IEnumerator<Sessao> GetEnumerator()
         {
@@ -52,4 +41,4 @@ namespace Controller {
             throw new NotImplementedException();
         }
     }
-}*/
+}

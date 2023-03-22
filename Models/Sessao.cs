@@ -1,4 +1,4 @@
-/*using System;
+using System;
 
 namespace Models {
     public class Sessao {
@@ -21,4 +21,4 @@ namespace Models {
             return "Id: " + this.Id + " UsuarioId: " + this.UsuarioId + " Token: " + this.token + " Data de Criação: " + this.dataCriacao + " Data de Expiração: " + this.dataExpiracao;
         }
     }
-}*/
+}

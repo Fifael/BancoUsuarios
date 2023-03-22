@@ -25,6 +25,14 @@ namespace Controller
             }
         }
 
+        public static List<Usuario> getUsuarioByEmailAndSenha(string email, string senha)
+        {
+            using (Context db = new Context())
+            {
+                return (from usuario in db.Usuarios where usuario.Email == email && usuario.Senha == senha select usuario).ToList();
+            }
+        }
+
         public static void AddUsuario(Usuario usuario)
         {
             using (Context db = new Context())
