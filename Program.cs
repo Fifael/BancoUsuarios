@@ -8,7 +8,7 @@ namespace Program
         static void Main(string[] args)
         {
             int opcao = 0;
-            while (opcao != 16)
+            while (opcao != 14)
             {
                 Console.WriteLine("1 - Cadastra Usuario");
                 Console.WriteLine("2 - Alterar Usuario");
@@ -18,14 +18,12 @@ namespace Program
                 Console.WriteLine("6 - Alterar Perfil");
                 Console.WriteLine("7 - Mostar Perfil");
                 Console.WriteLine("8 - Remover Perfil");
-                Console.WriteLine("9 - Cadastra Sessao");
-                Console.WriteLine("10 - Alterar Sessao");
-                Console.WriteLine("11 - Mostar Sessao");
-                Console.WriteLine("12 - Remover Sessao");
-                Console.WriteLine("13 - Mostar todos Usuario");
-                Console.WriteLine("14 - Mostar todos Perfil");
-                Console.WriteLine("15 - Mostar todos Sessao");
-                Console.WriteLine("16 - Sair");
+                Console.WriteLine("9 - Fazer Login");
+                Console.WriteLine("10 - Fazer Logout");
+                Console.WriteLine("11 - Ver se ainda esta logado");
+                Console.WriteLine("12 - Mostar todos Usuario");
+                Console.WriteLine("13 - Mostar todos Perfil");
+                Console.WriteLine("14 - Sair");
 
                 opcao = int.Parse(Console.ReadLine());
                 switch (opcao)
@@ -57,25 +55,19 @@ namespace Program
                     case 9:
                         SessaoView.CadastrarSessao();
                         break;
-                    /*case 10:
-                        SessaoView.AtualizarSessao();
+                    case 10:
+                        SessaoView.ExcluirSessao();
                         break;
                     case 11:
                         SessaoView.BuscarSessao();
                         break;
                     case 12:
-                        SessaoView.DeletarSessao();
-                        break;*/
-                    case 13:
                         UsuarioView.Select();
                         break;
-                    case 14:
+                    case 13:
                         PerfilView.ListarPerfil();
                         break;
-                    /*case 15:
-                        SessaoView.ListarSessao();
-                        break;*/
-                    case 16:
+                    case 14:
                         Sair();
                     break;
                     default:

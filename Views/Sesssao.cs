@@ -16,5 +16,19 @@ namespace view
             string senha = Console.ReadLine();
             SessaoCollection.login(id, email, senha);
         }
+
+        public static void ExcluirSessao()
+        {
+            Console.WriteLine("Informe o Id da sessão que deseja excluir:");
+            int id = int.Parse(Console.ReadLine());
+            SessaoCollection.logout(id);
+        }
+
+       public static void BuscarSessao(){
+            Console.WriteLine("Informe o Id do Login:");
+            int id = int.Parse(Console.ReadLine());
+            Sessao sessao = SessaoCollection.GetSessao(id);
+            Console.WriteLine($"Id: {sessao.Id} ainda esta logado");
+        }
     }
 }
